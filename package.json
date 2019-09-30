@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "build:pre": "vue-cli-service build --mode pre-release",
+    "build:test": "vue-cli-service build --mode test",
+    "build:prod": "vue-cli-service build --mode production",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -23,6 +26,8 @@
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
