@@ -32,25 +32,25 @@ module.exports = {
   },
   // webpack-dev-server 相关配置
   devServer: { // 设置代理
-    hot: true, //热加载
-    host: '0.0.0.0', //ip地址
-    port: 8085, //端口
-    https: false, //false关闭https，true为开启
-    open: true, //自动打开浏览器
+    hot: true, // 热加载
+    host: '0.0.0.0', // ip地址
+    port: 8085, // 端口
+    https: false, // false关闭https，true为开启
+    open: true, // 自动打开浏览器
     proxy: {
-      '/api': { //本地
+      '/api': { // 本地
         target: 'xxx',
         // 如果要代理 websockets
         ws: true,
         changeOrigin: true
       },
-      '/test': { //测试
+      '/test': { // 测试
         target: 'xxx'
       },
-      '/pre': { //预发布
+      '/pre': { // 预发布
         target: 'xxx'
       },
-      '/pro': { //正式
+      '/pro': { // 正式
         target: 'xxx'
       }
     }
