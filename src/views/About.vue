@@ -10,7 +10,7 @@
 </template>
 <script>
 import axios from 'axios'
-import { vuePayPops } from 'phone-pay-v/'
+import { vuePayPops } from 'phone-pay-v'
 
 export default {
   name: 'about',
